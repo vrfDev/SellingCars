@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #fff;
     color: #fff;
     font-size: 10px;
     overflow: hidden;
@@ -29,6 +29,21 @@ header {
     grid-template-columns: 1fr 600px;
     gap: 100px;
     z-index: 2;
+    
+    a {
+        color: white; /* Define a cor branca para os links */
+        text-decoration: none; /* Remove o sublinhado, se necessário */
+    }
+    &:visited {
+        color: white; /* Garante que links visitados também fiquem brancos */
+    }
+    &:hover {
+        color: white; /* Garante que ao passar o mouse, a cor continue branca */
+    }
+    &:active {
+        color: white; /* Garante que ao clicar, a cor continue branca */
+    }
+    
     
 }
 
